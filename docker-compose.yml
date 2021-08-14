@@ -1,0 +1,8 @@
+version: '3.9'
+services:
+  koans:
+    image: ruby:latest
+    volumes:
+      - ./koans:/koans
+    working_dir: /koans
+    command: bash -c 'ruby path_to_enlightenment.rb'
